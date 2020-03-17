@@ -10,6 +10,7 @@ import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 import androidx.fragment.app.Fragment
+import com.kaopiz.kprogresshud.KProgressHUD
 
 fun Fragment.hideKeyboard() {
     view?.let { activity?.hideKeyboard(it) }
@@ -71,4 +72,27 @@ fun Activity.makeStatusBarTransparent() {
             statusBarColor = Color.TRANSPARENT
         }
     }
+}
+
+fun Fragment.progassBar() : KProgressHUD {
+    return KProgressHUD.create(context)
+        .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
+        .setDimAmount(0.5f)
+}
+
+fun Activity.progassBar() : KProgressHUD {
+    return KProgressHUD.create(this)
+        .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
+}
+
+fun Activity.progassBarPIE() : KProgressHUD {
+    return KProgressHUD.create(this)
+        .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
+        .setLabel("โปรดรอสักครู่!")
+}
+
+fun Fragment.progassBarPIE() : KProgressHUD {
+    return KProgressHUD.create(context)
+        .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
+        .setLabel("โปรดรอสักครู่!")
 }

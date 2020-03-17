@@ -12,8 +12,11 @@
     <!--    selected bottomNavigationView-->
     <style name="BottomNavigationView.TextAppearance.Active" parent="@style/TextAppearance.AppCompat.Medium">
         <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/kanit_regular</item>
+
     </style>
     <style name="BottomNavigationView.TextAppearance.InActive" parent="@android:style/TextAppearance">
         <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/kanit_regular</item>
     </style>
 </resources>
