@@ -50,6 +50,10 @@ class MainActivity : AppCompatActivity() {
             loadFragment(fragment)
         }
 
+        learning.setOnClickListener {
+
+        }
+
     }
 
     private fun loadFragment(fragment: Fragment?): Boolean {

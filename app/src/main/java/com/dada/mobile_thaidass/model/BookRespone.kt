@@ -3,6 +3,7 @@ package com.dada.mobile_thaidass.model
 
 import com.google.firebase.database.IgnoreExtraProperties
 import com.google.firebase.database.PropertyName
+import java.io.Serializable
 
 @IgnoreExtraProperties
 data class BookRespone(
@@ -12,7 +13,7 @@ data class BookRespone(
     val imagebook: String = "",
     @PropertyName("imagecontent")
     val imagecontent: String = "",
-    @PropertyName("imagedress1-2")
+    @PropertyName("imagedress12")
     val imagedress12: String = "",
     @PropertyName("imagerama")
     val imagerama: String = "",
@@ -32,4 +33,4 @@ data class BookRespone(
     val namedress2: String = "",
     @PropertyName("namerama")
     val namerama: String = ""
-)
+) : Serializable

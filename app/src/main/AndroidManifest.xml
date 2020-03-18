@@ -10,9 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.select_book.SelectBookActivity"></activity>
-        <activity android:name=".view.detail_dasspage.DetailDassPageActivity" />
-        <activity android:name=".view.present_Image.PresentImageActivity" />
+        <activity
+            android:name=".view.detail_book.DetailBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.select_book.SelectBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.detail_dasspage.DetailDassPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.present_Image.PresentImageActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".view.main.MainActivity"
             android:screenOrientation="portrait" />

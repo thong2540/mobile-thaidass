@@ -57,8 +57,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="assetType" value="IMAGE" />
                                       <entry key="imageAsset" value="$USER_HOME$/Downloads/icon/ic_joystick.png" />
-                                      <entry key="outputName" value="ic_close" />
+                                      <entry key="outputName" value="ic_joystick" />
                                       <entry key="theme" value="HOLO_DARK" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
