@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">mobile-thaidass</string>
+    <string name="app_name">Thai dress</string>
 
     <array name="menuOptions">
         <item>Home</item>
