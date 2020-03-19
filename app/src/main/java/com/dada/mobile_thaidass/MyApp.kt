@@ -1,11 +1,13 @@
 package com.dada.mobile_thaidass
 
 import android.app.Application
+import com.dada.mobile_thaidass.model.BookRespone
 import io.github.inflationx.calligraphy3.CalligraphyConfig
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor
 import io.github.inflationx.viewpump.ViewPump
 
 class MyApp : Application() {
+
     override fun onCreate() {
         super.onCreate()
 

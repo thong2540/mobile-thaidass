@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_select"
+    tools:context=".view.learning.SelectReignActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/charmonman_regular"
+        android:text="เลือกรัชสมัย"
+        android:textColor="@color/colorAccent"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/reign1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 1-3"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reign4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 4"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reign5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 5"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/reign6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 6"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reign7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 7"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reign8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 8"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 8"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/reign9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 9"
+                android:elevation="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:elevation="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_learning_select"
+                android:fontFamily="@font/charmonman_regular"
+                android:gravity="center"
+                android:text="รัชกาลที่ 9"
+                android:textColor="@color/colorAccent"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/backToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.dada.mobile_thaidass.view.main
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,11 +10,17 @@ import com.dada.mobile_thaidass.utility.makeStatusBarTransparent
 import com.dada.mobile_thaidass.view.book.BookFragment
 import com.dada.mobile_thaidass.view.gallery.GalleryFragment
 import com.dada.mobile_thaidass.view.home.HomeFragment
+import com.dada.mobile_thaidass.view.learning.MainLearningActivity
 import com.dada.mobile_thaidass.view.thaidass_page.ThaiDassPageFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private val home = HomeFragment()
+    private val book = BookFragment()
+    private val thai = ThaiDassPageFragment()
+    private val gallery = GalleryFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         onEvent()
 
-        loadFragment(HomeFragment())
+        loadFragment(home)
 
     }
 
@@ -31,19 +38,19 @@ class MainActivity : AppCompatActivity() {
             var fragment: Fragment? = null
             when (item.itemId) {
                 R.id.id_home -> {
-                    fragment = HomeFragment()
+                    fragment = home
                     textViewTitle.text = "หน้าแรก"
                 }
                 R.id.id_activity -> {
-                    fragment = BookFragment()
+                    fragment = book
                     textViewTitle.text = "หนังสือ"
                 }
                 R.id.id_favorites -> {
-                    fragment = ThaiDassPageFragment()
+                    fragment = thai
                     textViewTitle.text = "ชุดไทยสำคัญ"
                 }
                 R.id.id_settings -> {
-                    fragment = GalleryFragment()
+                    fragment = gallery
                     textViewTitle.text = "แกลลอรี่"
                 }
             }
@@ -51,7 +58,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         learning.setOnClickListener {
-
+            val intent = Intent(this, MainLearningActivity::class.java)
+            startActivity(intent)
         }
 
     }
