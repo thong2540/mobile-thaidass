@@ -16,16 +16,19 @@ import com.dada.mobile_thaidass.view.select_book.SelectBookActivity
 import com.kaopiz.kprogresshud.KProgressHUD
 import kotlinx.android.synthetic.main.fragment_book.*
 import kotlinx.android.synthetic.main.fragment_book.view.*
+import java.util.ArrayList
 
 class BookFragment : Fragment(), BookView {
 
     private val bookAdapter = BookAdapter()
     private val presenter = BookPresenter(this)
     private var showProgress: KProgressHUD? = null
+    private var model: ArrayList<BookRespone> = arrayListOf()
 
     override fun updateUI(`object`: Any) {
         showProgress?.dismiss()
-        val model = `object` as List<BookRespone>
+        model.clear()
+        model = `object` as ArrayList<BookRespone>
         bookAdapter.apply {
             itemList = model
             notifyDataSetChanged()

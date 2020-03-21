@@ -38,19 +38,19 @@ class MainActivity : AppCompatActivity() {
             var fragment: Fragment? = null
             when (item.itemId) {
                 R.id.id_home -> {
-                    fragment = home
+                    fragment = HomeFragment()
                     textViewTitle.text = "หน้าแรก"
                 }
                 R.id.id_activity -> {
-                    fragment = book
+                    fragment = BookFragment()
                     textViewTitle.text = "หนังสือ"
                 }
                 R.id.id_favorites -> {
-                    fragment = thai
+                    fragment = ThaiDassPageFragment()
                     textViewTitle.text = "ชุดไทยสำคัญ"
                 }
                 R.id.id_settings -> {
-                    fragment = gallery
+                    fragment = GalleryFragment()
                     textViewTitle.text = "แกลลอรี่"
                 }
             }

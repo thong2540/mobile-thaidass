@@ -49,21 +49,21 @@
                 android:id="@+id/left"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.1"
+                android:layout_weight="1.2"
                 android:src="@drawable/btn_left" />
 
             <ImageView
                 android:id="@+id/content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:src="@drawable/b1" />
 
             <ImageView
                 android:id="@+id/right"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.1"
+                android:layout_weight="1.2"
                 android:src="@drawable/btn_right" />
 
         </LinearLayout>
