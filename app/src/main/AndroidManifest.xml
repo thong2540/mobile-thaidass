@@ -5,23 +5,36 @@
     <application
         android:name=".MyApp"
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/logo_aapp"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/logo_aapp_round"
         android:supportsRtl="true"
-        android:hardwareAccelerated="false"
         android:theme="@style/AppTheme">
+        <activity android:name=".view.learning.InfoActivity"></activity>
         <activity
-            android:name=".view.learning.PlayLearningActivity"
+            android:name=".utility.game.choosing_dress.ChoosingDressActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".view.learning.PageSexActivity"
+            android:name=".utility.game.choosing_dress.HomeChoosingDressActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".view.learning.SelectReignActivity"
+            android:name=".utility.game.quiz_game.HomeQuizGameActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".view.learning.MainLearningActivity"
+            android:name=".utility.game.quiz_game.QuizGameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".utility.game.learning.PlayLearningActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".utility.game.learning.PageSexActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".utility.game.learning.SelectReignActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".utility.game.learning.MainLearningActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".view.detail_book.DetailBookActivity"

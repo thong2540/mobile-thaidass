@@ -22,4 +22,9 @@
         android:icon="@drawable/ic_photo"
         android:title="รูปภาพ"/>
 
+    <item
+        android:id="@+id/id_game"
+        android:icon="@drawable/ic_gram"
+        android:title="การเรียนรู้"/>
+
 </menu>

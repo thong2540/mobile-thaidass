@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import com.dada.mobile_thaidass.R
 import com.dada.mobile_thaidass.utility.darkenStatusBar
+import com.dada.mobile_thaidass.utility.makeStatusBarTransparent
 import com.dada.mobile_thaidass.view.main.MainActivity
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
@@ -19,7 +20,7 @@ class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        darkenStatusBar()
+        makeStatusBarTransparent()
         handler = Handler()
 
         setInit()

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_home"
     android:paddingBottom="32dp"
-    tools:context=".view.learning.MainLearningActivity">
+    tools:context=".utility.game.learning.MainLearningActivity">
 
     <ImageView
         android:id="@+id/play"

@@ -1,18 +1,15 @@
 package com.dada.mobile_thaidass.view.main
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.dada.mobile_thaidass.R
 import com.dada.mobile_thaidass.utility.makeStatusBarTransparent
 import com.dada.mobile_thaidass.view.book.BookFragment
 import com.dada.mobile_thaidass.view.gallery.GalleryFragment
 import com.dada.mobile_thaidass.view.home.HomeFragment
-import com.dada.mobile_thaidass.view.learning.MainLearningActivity
+import com.dada.mobile_thaidass.view.learning.LearningFragment
 import com.dada.mobile_thaidass.view.thaidass_page.ThaiDassPageFragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         onEvent()
 
-        loadFragment(home)
+        loadFragment(HomeFragment())
 
     }
 
@@ -53,13 +50,12 @@ class MainActivity : AppCompatActivity() {
                     fragment = GalleryFragment()
                     textViewTitle.text = "แกลลอรี่"
                 }
+                R.id.id_game -> {
+                    fragment = LearningFragment()
+                    textViewTitle.text = "สื่อการเเรียนรู้"
+                }
             }
             loadFragment(fragment)
-        }
-
-        learning.setOnClickListener {
-            val intent = Intent(this, MainLearningActivity::class.java)
-            startActivity(intent)
         }
 
     }
